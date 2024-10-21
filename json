@@ -1,0 +1,66 @@
+{
+    "malicious_executors": [
+        {
+            "name": "Wave",
+            "reason": "Known for injecting malicious code into games.",
+            "version": "latest",
+            "warning_message": "Hey! Stop using my fucking script! Wave is flagged for unsafe behavior. Get a better executor, or get the hell out!"
+        },
+        {
+            "name": "Fluxus",
+            "reason": "Reported for distributing harmful scripts and exploits.",
+            "version": "latest",
+            "warning_message": "Listen up! Fluxus has a history of distributing harmful shit. Don't even think about using it with my script!"
+        },
+        {
+            "name": "Hydrogen",
+            "reason": "Contains known exploits that can compromise game security.",
+            "version": "latest",
+            "warning_message": "Hydrogen is a serious risk to your security. Its exploits can lead to data corruption and give attackers access to your sensitive information. If you're using Hydrogen, stop right now and switch to a safe executor. Your safety is not worth the risk!"
+        },
+        {
+            "name": "Delta",
+            "reason": "Associated with keylogging and data theft activities.",
+            "version": "latest",
+            "warning_message": "Delta is known for malicious behavior that can lead to keylogging. Don't put your data at risk—kick this trash out of your system!"
+        },
+        {
+            "name": "Celery",
+            "reason": "Distributes malware disguised as game enhancements.",
+            "version": "latest",
+            "warning_message": "Celery is notorious for spreading malware. If you're still using it, you're playing with fire. Ditch it immediately!"
+        }
+    ],
+    "file_check": {
+        "extensions": [
+            ".exe",
+            ".rar",
+            ".zip",
+            ".js"
+        ],
+        "check_running_process": true,
+        "malicious_processes": [
+            "malicious_process_1",
+            "malicious_process_2",
+            "malicious_process_3"
+        ]
+    },
+    "warning_message": {
+        "default": "Hey buddy! Stop using my script. You have a malicious executor. Get a better one and don't use this script until then.",
+        "kick_message": "You have been kicked for using a malicious executor.",
+        "repeat_offender": "You have been warned multiple times. Your screen will now be blacked out permanently. Enjoy the white text saying: 'FUCK YOU' following you in every game you play!"
+    },
+    "checks": {
+        "file_check": true,
+        "executor_check": true,
+        "process_check": true,
+        "suspicious_activity": {
+            "enabled": true,
+            "threshold": 5 // Number of suspicious activities before triggering a warning
+        },
+        "repeat_warning_check": {
+            "enabled": true,
+            "threshold": 2 // Number of times to warn before taking action
+        }
+    }
+      }
